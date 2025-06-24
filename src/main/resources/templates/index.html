@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benim Portföyüm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/style.css}" href="/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 th:text="${fullName}">Adınız Soyadınız</h1>
+            <p class="subtitle" th:text="${title}">Full Stack Developer & Yazılım Mühendisi</p>
+            <div class="social-links" th:with="socialLinks=${socialLinks}">
+                <a th:each="link : ${socialLinks}" th:href="${link.url}" th:title="${link.title}" target="_blank" rel="noopener noreferrer">
+                    <img th:src="@{${link.icon}}" th:alt="${link.title}" src="/linkedin.svg">
+                </a>
+            </div>
+        </div>
+    </header>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Hakkımda</h2>
+            <p th:text="${aboutMe}">Merhaba! Ben yazılım geliştirmeye tutkuyla bağlı bir geliştiriciyim. Modern web teknolojileriyle projeler geliştiriyorum.</p>
+        </div>
+    </section>
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2>Yetenekler</h2>
+            <div class="skills-grid">
+                <div class="skill-card" th:each="skill : ${skills}" th:text="${skill}">Java</div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projeler</h2>
+            <div class="projects-grid">
+                <div class="project-card" th:each="project : ${projects}">
+                    <div class="project-card-content">
+                        <h3 th:text="${project.name}">Proje 1</h3>
+                        <p th:text="${project.description}">Kısa açıklama. Modern web uygulaması.</p>
+                    </div>
+                    <div class="project-card-actions">
+                        <a th:href="${project.url}" class="btn project-btn" target="_blank" rel="noopener noreferrer">Detay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2>İletişim</h2>
+            <div class="contact-flex">
+                <div class="contact-info">
+                    <h3>Bana Ulaşın</h3>
+                    <p><strong>E-posta:</strong> <span th:text="${email}">ornek@mail.com</span></p>
+                    <p><strong>Telefon:</strong> <span th:text="${phone}">+90 555 555 55 55</span></p>
+                
+                </div>
+                <form class="contact-form contact-card">
+                    <div class="input-group">
+                        <input type="text" placeholder="Adınız" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="E-posta" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Mesajınız" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 <span th:text="${fullName}">Adınız Soyadınız</span>. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+</body>
+</html> 
