@@ -16,10 +16,8 @@ Portföyünüzü (kişisel bilgiler, beceriler, projeler ve sosyal medya linkler
 - 🔗 Sosyal Medya Linkleri (GitHub, LinkedIn, Twitter vs.)
 - 🌐 Web Arayüzü (Thymeleaf ile)
 - 📦 RESTful API mimarisi
-- 🧪 Validation, Exception Handling desteği
 - ✅ Spring Data JPA + Hibernate
 - 🖼️ HTML5 + Bootstrap + Thymeleaf ile modern UI
-- 🔐 (Opsiyonel) Admin giriş paneli (geliştirilebilir)
 
 ---
 
