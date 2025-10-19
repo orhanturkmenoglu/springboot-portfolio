@@ -4,7 +4,12 @@ VALUES
 (1,
  'Orhan Türkmenoğlu',
  'Full Stack Java Developer | Java, Spring Boot, Docker, AWS Cloud, Spring Cloud, Databases, & ReactJS',
- 'Java ve Spring Boot ile kurumsal backend uygulamaları geliştiren, mikroservis mimarisi, Clean Architecture ve Domain Driven Design konularında uzman bir yazılım geliştiriciyim.\nJWT, OAuth2 ve Keycloak ile güvenli kimlik doğrulama sistemleri kuruyor; Docker ve AWS ile ölçeklenebilir, yüksek erişilebilirlikte çözümler sunuyorum.\nEvent-driven mimari ve mesajlaşma sistemleri (Kafka, RabbitMQ) kullanarak asenkron, sağlam sistemler tasarlıyor; unit ve entegrasyon testleriyle kaliteyi garanti altına alıyorum.\nFrontend’de JavaScript ve React ile modern arayüzler oluşturuyor, full-stack yetkinliklerimle projeleri uçtan uca yönetiyorum.\nGitHub’da aktif projeler geliştiriyor, Medium’da teknik yazılar paylaşarak topluluğa katkı sağlıyorum.\nAmacım; teknoloji alanında fark yaratan, sürdürülebilir ve yenilikçi yazılım çözümleri geliştirmek.',
+ 'Java ve Spring Boot ile kurumsal backend uygulamaları geliştiren, mikroservis mimarisi, Clean Architecture ve Domain Driven Design konularında uzman bir yazılım geliştiriciyim.
+  JWT, OAuth2 ve Keycloak ile güvenli kimlik doğrulama sistemleri kuruyor; Docker ve AWS ile ölçeklenebilir, yüksek erişilebilirlikte çözümler sunuyorum.
+  Event-driven mimari ve mesajlaşma sistemleri (Kafka, RabbitMQ) kullanarak asenkron, sağlam sistemler tasarlıyor; unit ve entegrasyon testleriyle kaliteyi garanti altına alıyorum.
+  Frontend’de JavaScript ve React ile modern arayüzler oluşturuyor, full-stack yetkinliklerimle projeleri uçtan uca yönetiyorum.
+  GitHub’da aktif projeler geliştiriyor, Medium’da teknik yazılar paylaşarak topluluğa katkı sağlıyorum.
+  Amacım; teknoloji alanında fark yaratan, sürdürülebilir ve yenilikçi yazılım çözümleri geliştirmek.',
  'orhantrkmn749@mail.com',
  '05417679626')
 ON CONFLICT (id) DO NOTHING;
