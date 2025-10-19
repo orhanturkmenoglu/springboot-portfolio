@@ -31,7 +31,6 @@ ON CONFLICT (id) DO NOTHING;
 
 -- PROJECTS
 INSERT INTO projects (id, name, description, url, user_id) VALUES
-  (1, 'finWallet', 'Spring Boot tabanlı dijital cüzdan projesi. JWT refresh token, Redis blacklist ve güvenli işlem yönetimi içerir.', 'https://github.com/orhanturkmenoglu/finWallet', 1),
   (2, 'ecommerce-microservices-springboot', 'Bu proje, servis kaydı, API geçidi, hata toleransı, merkezi yapılandırma ve ödeme yönetimi gibi mikroservis kavramlarını içermektedir. Müşteri, adres, ürün, envanter, sipariş ve ödeme yönetimini kapsar. Jwt Authentication ile güvenli oturum sağlanır ve Stripe + RabbitMQ entegrasyonu ile sipariş ve stok yönetimi yapılır.', 'https://github.com/orhanturkmenoglu/ecommerce-microservices-springboot', 1),
   (3, 'security-jwt-token', 'JWT token tabanlı güvenlik özellikleri geliştirilmiştir: access & refresh token, logout işlemleri, özelleştirilmiş 401/403 yanıtları, method düzeyinde yetkilendirme ve özel authentication provider ile güvenli oturum yönetimi.', 'https://github.com/orhanturkmenoglu/security-jwt-token', 1),
   (4, 'spring-security-mernis-auth', 'Türkiye Cumhuriyeti vatandaşlarının kimlik doğrulamasını sağlamak için MERNIS Web Servisi ile entegre çalışan ve JWT tabanlı güvenli oturum yönetimi sağlayan özel Spring Security yapısı. TCKN, ad, soyad ve doğum yılı ile doğrulama yapılır, ardından JWT token üretilir.', 'https://github.com/orhanturkmenoglu/spring-security-mernis-auth', 1),
